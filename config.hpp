@@ -203,7 +203,7 @@ inline double config::str_2_type<double>( const std::string& value ) const
 template<>
 inline bool config::str_2_type<bool>( const std::string& value ) const
 {
-    return value == "true" ? true : false;
+    return value == "true" || value == "1" ? true : false;
 }
 /////////////////////////////////////////////////////////////////////////////////////////
 #undef _Template
